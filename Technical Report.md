@@ -145,7 +145,11 @@ ORDER BY count_last_names DESC;
 <p align="center">
   <img src="EmployeeSQL/Images/average_salary_by_title.png">
 </p>
+The suspicion that the dataset is wrong is confirmed. The salaries are substantially the same for several functions of different hierarchical levels.
+In addition, the employee number assigned is a number already used in the database.
 
+<p align="center">
+  <img src="EmployeeSQL/Images/emp_no_499942.png">
+</p>
 
-
-
+To be able to follow salaries by position, the company should have to define one title_id as primary key in Title table and place it as foreign key in the Salary table.
